@@ -63,21 +63,16 @@ public int getRoomNumber()	 // getter method for room number
 }
 
 
-public HotelRoom(String room)
-{
-	setRoomType(room); 
-}
-
-public void setRoomType(String room)
+public void setRoomType(String room) // setter method for room type
 {
 	roomType = room; 
 }
-public String getRoomType()
+public String getRoomType() // getter method for room type
 {
 	return roomType; 
 }
 
-public boolean isOccupied()
+public boolean isOccupied() // method to check if room is occupied
 {
 	if(vacancy == 1)
 	{
@@ -90,7 +85,7 @@ public boolean isOccupied()
 	return false;
 }
 	
-public void setOccupied()
+public void setOccupied() // method to set occupancy 
 {
 	if(isOccupied() == true )
 	{
