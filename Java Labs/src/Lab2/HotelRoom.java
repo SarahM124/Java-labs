@@ -1,29 +1,115 @@
 package Lab2;
 
-
 public class HotelRoom {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		Hotel roomA = new Hotel();		// Create an instance of our Thermometer class
-		Hotel roomB = new Hotel();
-		Hotel roomC = new Hotel(202, "Single", 0, 90);
-		
-		roomA.setRoomNumber(200);
-		roomA.setRoomType("Single");
-		roomA.setVaccancy(1);
-		roomA.setRate(100);
-		System.out.println("room number is " + roomA.getRoomNumber() + ", type is " + roomA.getRoomType() + " and the rate is " + roomA.getRate() + ". Vaccancy: " + roomA.getVaccancy());
-		
-		roomB.setRoomNumber(201);
-		roomB.setRoomType("Double");
-		//roomB.setVaccancy(0);
-		roomB.setRate(80);
-		System.out.println("room number is " + roomB.getRoomNumber() + ", type is " + roomB.getRoomType() + " and the rate is " + roomB.getRate() + ". Vaccancy: " + roomB.getVaccancy());
-		System.out.println("room number is " + roomB.getRoomNumber() + ", type is " + roomB.getRoomType() + " and the rate is " + roomB.getRate() + ". Vaccancy: " + roomB.isOccupied());
-		System.out.println("room number is " + roomC.getRoomNumber() + ", type is " + roomC.getRoomType() + " and the rate is " + roomC.getRate() + ". Vaccancy: " + roomC.getVaccancy());
+private int roomNumber;
+private String roomType; 
+private int occupancy; 
+private int vacancy; 
+	private double rate; 
+ 
+
+public HotelRoom()  // constructor method #1
+{
+	setRoomNumber(0);
+	setRoomType("");
+	setVacancy(0);
+	setRate(0); 
+	
+}
+
+public HotelRoom(int number, String type, int vacancy, double price) // constructor method #2 takes 4 values as arguments
+{
+	roomNumber = number; 
+	roomType = type; 
+	occupancy = vacancy;  
+	rate = price; 
+}
+
+
+public void setVacancy(int number) // vacancy setter
+{
+	occupancy = number; 
+}  
+public int getVacancy()
+{
+	return occupancy; 
+}
+  
+
+public void setRate(double number)  // setter method for hotel rate
+{
+	rate = number; 
+}
+
+public double getRate()  // getter method for hotel rate
+{
+	return rate; 
+}
+
+
+
+
+
+public void setRoomNumber(int number)  // setter method for room number
+{
+	
+	roomNumber = number; 
+}
+
+public int getRoomNumber()	 // getter method for room number
+{
+	return roomNumber; 
+}
+
+
+public HotelRoom(String room)
+{
+	setRoomType(room); 
+}
+
+public void setRoomType(String room)
+{
+	roomType = room; 
+}
+public String getRoomType()
+{
+	return roomType; 
+}
+
+public boolean isOccupied()
+{
+	if(vacancy == 1)
+	{
+		return true;
+	}
+	else if(vacancy == 0)
+	{
+		return false; 
+	}
+	return false;
+}
+	
+public void setOccupied()
+{
+	if(isOccupied() == true )
+	{
+		 System.out.println("Room is already occupied"); 
 		
 	}
+	else if(isOccupied() == false)
+	{
+		System.out.println("Room is vacant");
+	}
+	
+}
+
 
 }
+
+
+
+
+
+
+
