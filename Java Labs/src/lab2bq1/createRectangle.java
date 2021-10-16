@@ -3,9 +3,8 @@ package lab2bq1;
 public class createRectangle {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Rectangle rectangleLength = new Rectangle();
-		//Rectangle rectangleWidth = new Rectangle(); 
+	
 		
 		
 		
