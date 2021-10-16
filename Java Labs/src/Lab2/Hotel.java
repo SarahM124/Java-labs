@@ -14,17 +14,17 @@ public class Hotel {
 		roomA.setRoomType("Single");
 		roomA.setVacancy(1);
 		roomA.setRate(100);
-		System.out.println("room number is " + roomA.getRoomNumber() + ", type is " + roomA.getRoomType() + " and the rate is " + roomA.getRate() + ". Vaccancy: " + roomA.getVacancy());
+		System.out.println("room number is " + roomA.getRoomNumber() + ", type is " + roomA.getRoomType() + " and the rate is " + roomA.getRate() + ". Vacancy: " + roomA.getVacancy());
 		
 		//Room B
 		roomB.setRoomNumber(201);
 		roomB.setRoomType("Double");
 		roomB.setRate(80);
-		System.out.println("room number is " + roomB.getRoomNumber() + ", type is " + roomB.getRoomType() + " and the rate is " + roomB.getRate() + ". Vaccancy: " + roomB.getVacancy());
-		System.out.println("room number is " + roomB.getRoomNumber() + ", type is " + roomB.getRoomType() + " and the rate is " + roomB.getRate() + ". Vaccancy: " + roomB.isOccupied());
+		System.out.println("room number is " + roomB.getRoomNumber() + ", type is " + roomB.getRoomType() + " and the rate is " + roomB.getRate() + ". Vacancy: " + roomB.getVacancy());
+		System.out.println("room number is " + roomB.getRoomNumber() + ", type is " + roomB.getRoomType() + " and the rate is " + roomB.getRate() + ". Vacancy: " + roomB.isOccupied());
 		
 		//Room C 
-		System.out.println("room number is " + roomC.getRoomNumber() + ", type is " + roomC.getRoomType() + " and the rate is " + roomC.getRate() + ". Vaccancy: " + roomC.getVacancy());
+		System.out.println("room number is " + roomC.getRoomNumber() + ", type is " + roomC.getRoomType() + " and the rate is " + roomC.getRate() + ". Vacancy: " + roomC.getVacancy());
 		
 	}
 
