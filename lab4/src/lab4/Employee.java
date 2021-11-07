@@ -1,11 +1,6 @@
 package lab4;
 import java.util.Scanner;
 
-// employee class
-// Add employee (name, employee type)
-// return employee record 
-// toString to list employees 
-
 
 
 
