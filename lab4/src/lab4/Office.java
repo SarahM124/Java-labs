@@ -2,8 +2,6 @@ package lab4;
 
 public class Office {
 	
-	// assign office number 
-	// toString method 
 	int roomNumber; 
 	private static int newRoomNumber = 100; 
 	private Employee[] twoEmployees = new Employee[2]; 
